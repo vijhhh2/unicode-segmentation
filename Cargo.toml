@@ -10,7 +10,7 @@ crate-type = ["cdylib"]
 [dependencies]
 node-bindgen = { version = "6.0" }
 tslink = "0.1.2"
-unicode-segmentation = "1.10.1"
+unicode-segmentation = "1.11.0"
 
 [build_dependencies]
 node-bindgen = { version = "6.0", default-features = false, features = ["build"] }
