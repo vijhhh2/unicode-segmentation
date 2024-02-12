@@ -1,0 +1,20 @@
+[package]
+name = "unicode_segmentation"
+version = "0.1.0"
+authors = ["vijay.mangapoti@gmail.com"]
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+node-bindgen = { version = "6.0" }
+tslink = "0.1.2"
+unicode-segmentation = "1.10.1"
+
+[build_dependencies]
+node-bindgen = { version = "6.0", default-features = false, features = ["build"] }
+
+[tslink]
+name = "./dist/index.node"
+snake_case_naming = "methods"
